@@ -1,0 +1,96 @@
+{
+  "version": "v1",
+  "github": {
+    "queries": [
+      "ai agent",
+      "llm",
+      "claude code",
+      "mcp",
+      "multimodal"
+    ],
+    "trustedOrgs": [
+      "openai",
+      "anthropics",
+      "vercel-labs",
+      "microsoft",
+      "google",
+      "google-gemini",
+      "meta",
+      "NousResearch"
+    ],
+    "thresholds": {
+      "minStarsRecent": 1000,
+      "minStarsTrustedOrg": 300,
+      "activeWithinDays": 14,
+      "newRepoWithinDays": 7,
+      "minStarsNewRepo": 100
+    }
+  },
+  "hackerNews": {
+    "queries": [
+      "AI",
+      "LLM",
+      "OpenAI",
+      "Anthropic",
+      "Claude",
+      "agents",
+      "Codex",
+      "MCP"
+    ],
+    "lookbackDays": 3,
+    "thresholds": {
+      "minPoints": 150,
+      "minComments": 80,
+      "mustReadPoints": 300,
+      "mustReadComments": 150
+    }
+  },
+  "officialSources": [
+    {
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/"
+    },
+    {
+      "name": "OpenAI Research",
+      "url": "https://openai.com/research/"
+    },
+    {
+      "name": "Anthropic News",
+      "url": "https://www.anthropic.com/news"
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/"
+    },
+    {
+      "name": "Meta AI Blog",
+      "url": "https://ai.meta.com/blog/"
+    },
+    {
+      "name": "Microsoft AI Blog",
+      "url": "https://blogs.microsoft.com/ai/"
+    }
+  ],
+  "personalSources": [
+    {
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/"
+    },
+    {
+      "name": "Sebastian Raschka",
+      "url": "https://sebastianraschka.com/"
+    },
+    {
+      "name": "Lilian Weng",
+      "url": "https://lilianweng.github.io/"
+    },
+    {
+      "name": "Latent Space",
+      "url": "https://www.latent.space/"
+    },
+    {
+      "name": "The Batch",
+      "url": "https://www.deeplearning.ai/the-batch/"
+    }
+  ]
+}
