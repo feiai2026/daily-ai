@@ -1,0 +1,4 @@
+interface:
+  display_name: "Daily AI"
+  short_description: "生成 AI 日报并沉淀自动化项目工作流"
+  default_prompt: "Use $daily-ai to turn this recurring task into a versioned, executable automation project."

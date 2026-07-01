@@ -4,6 +4,45 @@
 
 它使用公开 API 收集 GitHub 和 Hacker News 候选内容，再由具备联网与文件操作能力的 AI Agent 核验官方来源、筛选重点并生成固定格式的中文日报。
 
+## Agent Skill
+
+本仓库同时提供一个跨 Agent 的 AI 日报与自动化项目工作流 skill：
+
+```text
+daily-ai/
+```
+
+它遵循 `SKILL.md` 结构，适合 Codex、Claude Code、OpenCode、OpenClaw 等支持 Agent Skills / SKILL.md 的 Agent 使用。用途是把周期报告、定时收集、监控任务、交接给其他执行器的自动化需求，整理成可执行、可版本化、可交接的小项目。
+
+支持 skill 安装的 Agent 可以直接安装：
+
+```text
+帮我安装这个 skill：
+https://github.com/feiai2026/daily-ai/tree/main/daily-ai
+```
+
+也可以用脚本安装到本机常见 Agent skill 目录：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/feiai2026/daily-ai/main/install.sh | bash
+```
+
+指定安装目标：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/feiai2026/daily-ai/main/install.sh | bash -s -- codex
+curl -fsSL https://raw.githubusercontent.com/feiai2026/daily-ai/main/install.sh | bash -s -- claude
+curl -fsSL https://raw.githubusercontent.com/feiai2026/daily-ai/main/install.sh | bash -s -- openclaw
+curl -fsSL https://raw.githubusercontent.com/feiai2026/daily-ai/main/install.sh | bash -s -- opencode
+curl -fsSL https://raw.githubusercontent.com/feiai2026/daily-ai/main/install.sh | bash -s -- all
+```
+
+安装后重启对应 Agent，然后使用：
+
+```text
+$daily-ai
+```
+
 ## 特点
 
 - 不依赖付费 API
@@ -54,6 +93,9 @@ node scripts/v1/check-report.mjs reports/v1/YYYY-MM-DD.md
 ```text
 daily-ai/
   README.md
+  daily-ai/
+    SKILL.md
+    references/
   WORKFLOW.md
   CHANGELOG.md
   LICENSE
